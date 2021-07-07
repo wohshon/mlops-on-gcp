@@ -22,7 +22,7 @@
 steps:
 # Build the image that encapsulates the pipeline.
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '-t', 'gcr.io/$PROJECT_ID/$_TFX_IMAGE_NAME:$TAG_NAME', 'workshops/tfx-caip-tf23/lab-03-tfx-cicd/solutions/tfx-cli']
+  args: ['build', '-t', 'gcr.io/$PROJECT_ID/$_TFX_IMAGE_NAME:$TAG_NAME', '.']
   dir: $_PIPELINE_FOLDER
 
   
